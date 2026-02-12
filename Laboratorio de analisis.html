@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laboratorio Veterinario | Veterinaria Amigos Peludos</title>
+    <style>
+        /* Estilos basados en el primer código (Tonos Azules) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 { margin: 0; }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover { color: #3498db; }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cta {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .cta:hover { background-color: #27ae60; }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2, h3 { color: #2c3e50; }
+
+        .tests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .test {
+            background: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+        }
+
+        .muted { color: #7f8c8d; font-size: 0.9em; }
+
+        form div { margin-bottom: 15px; }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .pill {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Veterinaria Amigos Peludos</h1>
+        <p>Cuidamos con amor a quienes más te quieren</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="left">
+                <h2>Laboratorio Clínico Veterinario</h2>
+                <p>Hematología, bioquímica, serologías y diagnóstico rápido.</p>
+                <p class="muted" style="color:white">Horario: Lun - Vie 8:00 - 18:00</p>
+                <div style="margin-top:20px">
+                    <a href="#turnos" class="cta">Solicitar Turno</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="pill"><strong>60</strong><br><small>Muestras/día</small></div>
+            </div>
+        </section>
+
+        <section class="card" id="servicios">
+            <h3>Servicios Destacados</h3>
+            <div class="tests">
+                <div class="test"><h4>Hemograma completo</h4><small>Glóbulos rojos, blancos y plaquetas.</small></div>
+                <div class="test"><h4>Perfil bioquímico</h4><small>Función renal y hepática.</small></div>
+                <div class="test"><h4>PCR</h4><small>Detección de agentes infecciosos.</small></div>
+                <div class="test"><h4>Uroanálisis</h4><small>Infecciones y cálculos.</small></div>
+            </div>
+        </section>
+
+        <section class="card" id="turnos">
+            <h3>Solicitar Turno</h3>
+            <form action="#" onsubmit="event.preventDefault();alert('Turno solicitado.');">
+                <div>
+                    <label for="propietario">Nombre del Propietario</label>
+                    <input id="propietario" required>
+                </div>
+                <div>
+                    <label for="animal">Mascota (Nombre y Especie)</label>
+                    <input id="animal" placeholder="Ej: Luna - Gato" required>
+                </div>
+                <div>
+                    <label for="prueba">Prueba Solicitada</label>
+                    <select id="prueba">
+                        <option>Hemograma completo</option>
+                        <option>Perfil bioquímico</option>
+                        <option>PCR</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <section class="card" id="contacto">
+            <h3>Contacto Laboratorio</h3>
+            <p>Av. Central 123 — Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: laboratorio@amigospeludos.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Veterinaria Amigos Peludos - Laboratorio Clínico - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
