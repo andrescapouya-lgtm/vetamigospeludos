@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style the dropdown button */
+        .dropbtn {
+            background-color: #3498db; /* A tone similar to existing colors */
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style the dropdown content (hidden by default) */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Style the links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veterinaria Amigos Peludos</h1>
+        <p>Cuidamos con amor a quienes más te quieren</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown">
+            <button class="dropbtn">Más opciones</button>
+            <div class="dropdown-content">
+                <a href="venta de medicamentos.html">Medicamentos</a>
+                <a href="consultanos.html">Consultas</a>
+                <a href="Alimentos balanceados de varias marcas.html">Alimentos</a>
+                <a href="accesorios para tu mascota.html">Accesorios</a>
+                <a href="zona reptiles y anfibios.html">Reptiles y Anfibios</a>
+                <a href="zona zootecnista.html">Zootecnista</a>
+                <a href="guarderia.html">Guarderia</a>
+                <a href="otras mascotas.html">Otras Mascotas</a>
+                <a href="Laboratorio de analisis.html">Laboratorio de Analisis</a>
+                <a href="horarios de atencion.html">Horarios de atencion</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>¡Bienvenido a Amigos Peludos!</h1>
+            <p>Tu veterinaria de confianza en el cuidado de mascotas grandes y peque&ntilde;as.</p>
+        </section>
+
+        <section>
+            <h2>Sobre Nosotros</h2>
+            <p>
+                En <strong>Veterinaria Amigos Peludos</strong> ofrecemos atención integral para tus mascotas.
+                Contamos con un equipo profesional y comprometido que brinda servicios de consulta general, 
+                vacunación, cirugías, peluquería canina y atención a domicilio en zonas cercanas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Servicios Destacados</h2>
+            <ul style="text-align:left; display:inline-block;">
+                <li>Consultas veterinarias</li>
+                <li>Vacunación y desparasitación</li>
+                <li>Cirugías y urgencias</li>
+                <li>Peluquería y baño</li>
+                <li>Visitas a domicilio</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Calle Falsa 123, Barrio Los Pinos, Ciudad</p>
+        <p>Teléfono: (123) 456-7890 | contacto@amigospeludos.com</p>
+        <p>&copy; 2025 Veterinaria Amigos Peludos - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>m
